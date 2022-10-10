@@ -6,6 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: cadetblue;
+            font-family: sans-serif;
+        }
+
+        header {
+            padding: 20px 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 0 0 45px;
+        }
+
+        section {
+            position: relative;
+            height: 50vh;
+            padding: 100px;
+        }
+
+        blockquote p {
+            padding: 15px;
+            background: rgb(130, 193, 196);
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
 </head>
 
 <body id="home">
@@ -14,20 +50,22 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#howTitlesWorks">How titles works</a></li>
-                <li><a href="#">aba 3</a></li>
+                <li><a href="#text">Writting a text</a></li>
                 <li><a href="#">Extras</a></li>
             </ul>
         </nav>
     </header>
     <section>
         <h1>Hello World!</h1>
+        <hr>
         <h2>That is the <i>clichê</i> form of starting your project, as a programmer</h2>
         <p>Welcome to my page! today we are going to explain some basic tags for HTML.</p>
     </section>
     <section id="howTitlesWorks">
         <small> <a href="#home">Go Back</a></small>
         <h2>How Titles Works</h2>
-        <p>Titles have 6 diferent formats to use on your text. h1 to h6, which h1 is the bigger 
+        <hr>
+        <p>Titles have 6 diferent formats to use on your text. h1 to h6, which h1 is the bigger
             one and the h6 is the smaller one.We have these possible tags for titling.:</p> <br>
         <ul>
             <li>
@@ -58,35 +96,25 @@
     </section>
     <section id="text">
         <small> <a href="#home">Go Back</a></small>
-        <h2>How Titles Works</h2>
-        <p>
-            
+        <h2>Writting a text</h2>
+        <hr>
+        <p> &emsp; Usually we use the p tag to write paragraphs. But that is not the only thing
+            that we can do about text. we have <strong>bold</strong>, <i>italic</i> and <u>underline</u>
+            formats to use. Also, we can reference other web pages just using blockquote tag:
         </p>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re
+                pierced.</p>
+        </blockquote>
+        <p> &emsp; Mark is a tag for styling text without needing to change it in CSS. It will change the mensage just
+            like <mark>mark tag</mark> or <small>small tag</small>. <br>
+            &emsp; We can use &lt;hr&gt; to create a horizontal rule:
+        </p><hr>
     </section>
-    <section>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                background-color: cadetblue;
-                font-family: sans-serif;
-            }
-
-            header {
-                padding: 20px 0;
-            }
-
-            nav li {
-                display: inline;
-                margin: 0 0 0 45px;
-            }
-
-            section {
-                position: relative;
-                height: 50vh;
-                padding: 100px;
-            }
-        </style>
+    <section id="list">
+        <h2>List</h2>
+        <hr>
+        <p> &emsp; Tags like &lt;ol&gt; &lt;ul&gt; &lt;li&gt; &lt;a&gt; These are the favorites ones to use with nav tag.</p>
     </section>
 </body>
 
